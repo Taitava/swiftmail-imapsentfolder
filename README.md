@@ -7,7 +7,7 @@ This is a plugin for [SwiftMailer](https://github.com/swiftmailer/swiftmailer) t
 **This feature only works with IMAP servers, any other protocols are not supported!** It does not matter, which protocol was originally used to send the message.
 
 ## Requirements
-- SwiftMailer 6
+- SwiftMailer 5 or 6
 - PHP imap extension
 
 ## Installation

@@ -4,7 +4,7 @@
   "license": "MIT",
   "require": {
     "ext-imap": "*",
-    "swiftmailer/swiftmailer": "~6"
+    "swiftmailer/swiftmailer": ">=5"
   },
   "keywords": [
     "email",
