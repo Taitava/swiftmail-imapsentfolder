@@ -1,0 +1,22 @@
+{
+  "name": "taitava/swiftmailer-imapsentfolder",
+  "description": "A SwiftMailer plugin that stores a copy of all sent messages to a folder on an IMAP email server.",
+  "license": "MIT",
+  "require": {
+    "ext-imap": "*",
+    "swiftmailer/swiftmailer": "~6"
+  },
+  "keywords": [
+    "email",
+    "imap",
+    "sent"
+  ],
+  "authors": [
+    {
+      "name": "Jarkko Linnanvirta",
+      "email": "posti@taitavasti.fi",
+      "homepage": "http://taitavasti.fi",
+      "role": "Nerd"
+    }
+  ]
+}
