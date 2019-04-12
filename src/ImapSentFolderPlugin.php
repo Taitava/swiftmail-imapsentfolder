@@ -81,9 +81,9 @@ class ImapSentFolderPlugin implements Swift_Events_SendListener
 			$from = array_keys($email_message->getFrom())[0]; // Get's an email address without the name part
 			$config = $this->mailbox_config($from);
 			$imap = imap_open($this->mailbox($config), $config['username'], $config['password']);
-			if (false === $imap) throw new ImapException('Failed to connect to IMAP mailbox: ' . $this->mailbox($from));
+			if (false === $imap) throw new ImapException('Failed to connect to IMAP mailbox: ' . $this->mailbox($config));
 			$done = imap_append($imap, $this->mailbox($config, true), $email_content, '\\Seen');
-			if (!$done) throw new ImapException('Failed to save an email message to an IMAP mailbox: ' . $this->mailbox($from, true));
+			if (!$done) throw new ImapException('Failed to save an email message to an IMAP mailbox: ' . $this->mailbox($config, true));
 			imap_close($imap);
 		}
 	}
